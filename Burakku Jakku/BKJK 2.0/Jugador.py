@@ -17,7 +17,7 @@ class Jugador():
 
         #sumar el total de la mano
         suma_cartas_jugador = mazo.baraja[self.hand[0]] + mazo.baraja[self.hand[1]]
-        
+        # USAR NUMPY y transformar a NARRAY para sumar todo de una despues de hacer un append!!!!
         #if (suma_cartas_jugador > 21 and self.contiene_as()):
         #    suma_cartas_jugador -= 10
         if (vm.contiene_as(self.hand) == True and vm.contiene_figura(self.hand) == True):
